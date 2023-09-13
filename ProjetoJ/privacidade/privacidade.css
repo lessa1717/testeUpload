@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+@font-face {
+	font-family: 'VW Head';
+	src: url('./fonts/VWText-Regular.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+
+}
+
+/* HEADER */
+
+header {
+	background-color: #ffff;
+	height: 13vh;
+	display: flex;
+	align-items: center;
+	font-family: var(--font_titulo);
+}
+
+#menu_hamburguer{
+	display: none;
+}
+
+.posicionamento_header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.posicionamento_header img{
+	height: 50px;
+}
+
+header nav{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+header a{
+	color: var(--azul_vw);
+	text-transform: initial;
+	text-decoration: none;
+	font-family: var(--font_titulo);
+	font-size: 20px;
+}
+
+.header_links{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 450px;
+}
+
+header .login{
+	width: 35%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.login .btn_login{
+	border: 2px solid var(--azul_vw);
+	border-radius: 8px;
+	padding: 3px 25px 3px 25px;
+}
+
+.login .btn_cadastro{
+	border: 2px solid var(--azul_vw);;
+	background: var(--azul_vw);
+	color: aliceblue;
+	border-radius: 8px;
+	padding: 3px 25px 3px 25px;
+}
+
+/* FIM DO HEADER */
+
+/* MAIN */
+
+main{
+	background-color: var(--cinza);
+}
+
+.posicionamento{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+	width: 1em;
+	position: absolute;
+	left: -999em;
+	overflow: hidden;
+}
+
+.conteudo{
+	padding: 60px 0 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.topico {
+	width: 80%;
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.topico h2{
+	font-size: 32px;
+	color: var(--verde);
+	font-family: var(--vw);
+}
+
+.topico p{
+	font-size: 21px;
+	color: var(--azul);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* FIM DO MAIN */
+
+/* FOOTER */
+
+footer{
+	background-color: var(--azul_vw);
+	color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.redes_sociais{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+
+.redes_sociais>img{
+	width: 180px;
+}
+
+.redes_sociais_links{
+	width: 250px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.divisoria{
+	margin: 30px auto;
+	width: 80%;
+	height: 2px;
+	border-radius: 20px;
+	background-color: var(--verde);
+	max-width: 1150px;
+}
+
+.footer_conteudo{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	max-width: 1100px;
+	width: 80%;
+}
+
+.footer_conteudo nav{
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font_titulo);
+}
+
+.footer_conteudo nav span{
+	color: var(--verde);
+	font-size: 25px;
+	margin: 5px 0;
+
+}
+
+.footer_conteudo nav a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	margin: 3px 0;
+	width: fit-content;
+}
+
+.newsletter{
+	width: 450px;
+	height: 225px;
+	border: 2px solid aliceblue;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.newsletter h2{
+	color: var(--verde);
+	margin: 15px 0;
+	font-family: var(--font_texto);
+	font-size: 20px;
+}
+
+.news_email{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	gap: 15px;
+}
+
+.input_text{
+	background-color: transparent;
+	border: 1px solid aliceblue;
+	border-radius: 3px;
+	width: 270px;
+	height: 30px;
+	padding: 0 7px;
+}
+
+.input_btn{
+	background: url(../geral/img/footer_seta.svg) no-repeat;
+    background-position: center;
+	border-radius: 7px;
+    width: 60px;
+    height: 34px;
+	font-family: var(--font_titulo);
+}
+
+.newsletter p{
+	font-family: var(--font_texto);
+	font-size: 16px;
+	text-align: center;
+}
+
+/* FIM DO FOOTER */
+
+
+@media screen and (max-width: 1000px) {
+	header .login{
+		flex-direction: column;
+		gap: 10px;
+		align-items: end;
+		width: fit-content;
+	}
+
+	.login a{
+		width: fit-content;
+	}
+
+	header nav{
+		justify-content: space-around;
+	}
+
+	.facilitando img{
+		display: none;
+	}
+
+	.facilitando>div h2{
+		text-align: center;
+	}
+
+
+}
+
+@media screen and (max-width: 900px) {
+	.posicionamento_header{
+		justify-content: space-between;
+		position: relative;
+	}
+	
+	#menu_links{
+		position: absolute;
+		display: none;
+		width: fit-content;
+		background-color: #001E50;
+		padding: 15px 15px 15px 15px;
+		border-radius: 10px;
+	}
+
+	#menu_links a{
+		color: aliceblue;
+
+
+	}
+
+	#menu_links .btn_login{
+		color: aliceblue;
+		border: 2px solid aliceblue;
+	}
+
+	#menu_links .btn_cadastro{
+		color: aliceblue;
+		border: 2px solid aliceblue;
+	}
+
+	#menu_hamburguer{
+		display: initial;
+		z-index: 1;
+	}
+
+	#menu_hamburguer svg{
+		height: 40px;
+	}
+
+	.posicionamento_header nav{
+		right:  0;
+		top: 50px;
+		flex-direction: column;
+	}
+
+	.header_links{
+		flex-direction: column;
+		align-items: end;
+		width: fit-content;
+		gap: 10px;
+
+	}
+
+	.login{
+		gap: 20px;
+		margin-top: 10px;
+	}
+
+	/* MAIN */
+
+	.nossa_missao{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+		gap: 15px;
+	}
+
+	.card{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		height: fit-content;
+	}
+	
+	.valores{
+		height: fit-content;
+	}
+
+	/* FOOTER */
+
+	footer{
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.redes_sociais{
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.footer_conteudo{
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		gap: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.footer_conteudo nav a, .footer_conteudo nav span{
+		text-align: center;
+    	align-self: center;
+		font-family: var(--font_titulo);
+	}
+
+	.footer_conteudo nav{
+		gap: 5px;
+
+	}
+
+	.newsletter{
+		width: 100%;
+		height: fit-content;
+		margin: 0 auto;
+	}
+
+	.newsletter h2{
+		text-align: center;
+	}
+
+	.input_text{
+		width: 90%;
+		flex-direction: column ;
+	}
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="shortcut icon" href="./img/icon_fav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../header_footer.css">
+    <link rel="shortcut icon" href="../suporte_mobili/img/icon_fav.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+
+
+        <div class="posicionamento_header posicionamento">
+            <div class="menu">
+                <img src="../geral/img_Home/logo.svg" alt="">
+                <nav>
+                    <input type="checkbox" id="input__menu-toggle" class="check">
+                    <label for="input__menu-toggle" class="label-for-menu">
+                        <div class="burger" onclick="mostrarMenu()" id="burguer" aria-expanded="false"
+                            aria-haspopup="true" aria-label="abrir menu">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                    </label>
+
+                    <div class="main-nav-list" id="recursos">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../quem_somos/quem_somos.html">Quem somos</a></li>
+                            <li><a href="../contato/index.html">Contato</a></li>
+                            <li><a href="../suporte_mobili/suporte.html">Suporte</a></li>
+
+                            <div class="botoes_header_2">
+                                <a class="login" href="../login/index.html">Login</a>
+                                <a class="cadastro" href="../Cadastro/cadastro.html">Cadastro</a>
+                            </div>
+                        </ul>
+
+
+                    </div>
+                </nav>
+
+
+            </div>
+
+            <div class="botoes_header">
+                <a class="login" href="../login/index.html">Login</a>
+                <a class="cadastro" href="../Cadastro/cadastro.html">Cadastro</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Entre em contato conosco</h1>
+        <div class="posicionamento_main_contato posicionamento">
+            <div class="forms_contato">
+
+                <form action="">
+                    <div class="coluna_form_contato">
+                        <div class="input_contato">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" value="">
+                        </div>
+
+                        <div class="input_contato">
+                            <label for="lname">Sobrenome:</label>
+                            <input type="text" id="sobrenome" name="sobrenome" value="">
+                        </div>
+                    </div>
+
+                    <div class="coluna_form_contato">
+                        <div class="input_contato">
+                            <label for="email">E-mail:</label>
+                            <input type="text" id="email" name="email" value="">
+                        </div>
+
+                        <div class="input_contato">
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone" value="">
+                        </div>
+                    </div>
+
+                    <div class="coluna_form_contato_mensagem">
+                        <div class="input_contato">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="4"></textarea>
+                            <input type="submit" value="Enviar" class="enviar_contato" id="enviar_contato">
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <img src="./img/ilustra_1_contato.png" alt="" class="ilustra1_contato">
+        <img src="./img/ilustra_2_contato.png" alt="" class="ilustra2_contato">
+    </main>
+
+
+
+</body>
+
+</html>

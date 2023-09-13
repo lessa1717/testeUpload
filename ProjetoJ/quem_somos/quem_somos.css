@@ -1,0 +1,185 @@
+
+body {
+	background-color: #E8E9EB;
+
+}
+.facilitando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+h1 {
+    width: 1em;
+    position: absolute;
+    left: -333em;
+    overflow: hidden;
+}
+
+.facilitando div {
+    color: var(--azul);
+    width: 100%;
+}
+
+.facilitando h2 {
+    font-family: var(--vw);
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+}
+
+.facilitando p {
+    font-family: var(--verdana);
+    line-height: 32px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.facilitando img {
+    width: 450px;
+    margin-left: 40px;
+}
+
+.nossa_missao {
+    margin-top: 50px;
+}
+
+.nossa_missao h2 {
+    color: var(--azul);
+    font-size: 40px;
+    font-family: var(--vw);
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px
+}
+
+.card {
+    background-color: var(--azul);
+    color: #E7E7E7;
+    height: auto;
+    width: 550px;
+    border-radius: 10px;
+    padding: 35px 30px 30px 35px;
+}
+
+.card h3 {
+    font-size: 40px;
+    font-family: var(--vw);
+}
+
+.card p {
+    font-size: 20px;
+    font-family: var(--verdana);
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.valores {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+@media screen and (max-width: 954px) {
+    .se1_suporte {
+        padding-top: 90px;
+    }
+
+    .menu img {
+        order: 2;
+        margin-left: 30px;
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .login a {
+        width: fit-content;
+    }
+
+    header nav {
+        justify-content: space-around;
+    }
+
+    .facilitando {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .facilitando img {
+        display: none;
+    }
+    .facilitando h2{
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .nossa_missao h2{
+        font-size: 32px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 954px){
+    .facilitando {
+        padding-top: 120px;
+
+    }
+}
+@media screen and (max-width: 900px) {
+
+    /* MAIN */
+    .nossa_missao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        height: fit-content;
+    }
+
+    .valores {
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 577px) {
+    .container_1 {
+        margin-top: 150px;
+        flex-direction: column-reverse;
+    }
+}

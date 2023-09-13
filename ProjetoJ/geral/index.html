@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/icon_fav.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+
+        <div class="posicionamento_header posicionamento">
+            <div class="menu">
+                <img src="./img/logo.svg" alt="">
+                <nav>
+                    <input type="checkbox" id="input__menu-toggle" class="check">
+                    <label for="input__menu-toggle" class="label-for-menu">
+                        <div class="burger" onclick="mostrarMenu()" id="burguer" aria-expanded="false"
+                            aria-haspopup="true" aria-label="abrir menu">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                    </label>
+
+                    <div class="main-nav-list" id="recursos">
+                        <ul>
+                            <li><a href="../home/pagina_home.html">Home</a></li>
+                            <li><a href="../quem_somos/home/quem_somos.html">Quem somos</a></li>
+                            <li><a href="../contato/index.html">Contato</a></li>
+                            <li><a href="../suporte_mobili/suporte.html">Suporte</a></li>
+
+                            <div class="botoes_header_2">
+                                <a class="login" href="../login/index.html">Login</a>
+                                <a class="cadastro" href="../Cadastro/cadastro.html">Cadastro</a>
+                            </div>
+                        </ul>
+
+
+                    </div>
+                </nav>
+
+
+            </div>
+
+            <div class="botoes_header">
+                <a class="login" href="">Login</a>
+                <a class="cadastro" href="">Cadastro</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+    </main>
+
+
+    <footer>
+        <div class="posicionamento_footer posicionamento">
+            <section class="container_footer1">
+                <img class="logo_footer" src="./img/logo_footer.svg" alt="">
+                <div class="redes_sociais">
+                    <nav>
+                        <a href="#"> <img src="./img/gg_facebook.svg" alt=""> </a>
+                        <a href="#"> <img src="./img/mdi_twitter.svg" alt=""> </a>
+                        <a href="#"> <img src="./img/formkit_linkedin.svg" alt=""> </a>
+                        <a href="#"> <img src="./img/mdi_instagram.svg" alt=""> </a>
+                    </nav>
+                </div>
+            </section>
+
+            <div class="linha"></div>
+            <section class="container_footer2">
+                <nav class="menu_footer">
+                    <span>Paginas</span>
+                    <ul>
+                        <li>Home</li>
+                        <li>Quem somos</li>
+                        <li>Contato</li>
+                        <li>Suporte</li>
+                        <li>Login</li>
+                        <li>Cadastro</li>
+                    </ul>
+                </nav>
+
+                <div class="news">
+                    <span>Junte-se à nossa newsletter</span>
+                    <div class="email_footer">
+                        <input type="email" name="email" id="email">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                    <p>Enviaremos atualizações semanais para ajudar na gestão de suas ferramentas de maneira mais
+                        eficiente.</p>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

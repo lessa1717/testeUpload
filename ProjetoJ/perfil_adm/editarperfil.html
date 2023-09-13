@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../perfil_parceiro/perfil.css">
+    <title>Editar Perfil</title>
+    <link rel="shortcut icon" href="../suporte_mobili/img/icon_fav.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <main>
+        <aside>
+            <img src="./gerenciamento_parceiros_adm/img/logo_footer.svg" alt="logo Mobili">
+            <div class="aside_top">
+                <h2>Menu</h2>
+                <div class="link_perfil">
+                    <a href="./perfil_adm.html">
+                        <img src="../img/perfil.svg" alt=""> Meu Perfil
+                    </a>
+                </div>
+                <div class="link_gerenciamento" style="background-color: #001E50;">
+                    <a href="./gerenciamento_parceiros_adm/gerenciamento_parceiros.html">
+                        <img src="../img/gerenciamento.svg" alt=""> Gerenciamento
+                    </a>
+                </div>
+            </div>
+            <div class="rede_social">
+                <h2>Redes Sociais</h2>
+                <nav>
+                    <div>
+                        <a href=""><img src="./gerenciamento_parceiros_adm/img/facebook_perfil.svg" alt=""> </a>
+                        <a href=""><img src="./gerenciamento_parceiros_adm/img/twitter_perfil.svg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./gerenciamento_parceiros_adm/img/linkedin_perfil.svg" alt=""></a>
+                        <a href=""><img src="./gerenciamento_parceiros_adm/img/instagram_perfil.svg" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="divisoria"></div>
+            <div class="perfil">
+                <img src="./gerenciamento_parceiros_adm/img/foto_perfil.svg" alt="">
+                <div>
+                    <div>
+                        <a href="#">Maria Santos</a>
+                        <span>eu@gmail.com</span>
+                    </div>
+                    <a href="../index.html">
+                        <img src="./gerenciamento_parceiros_adm/img/sair_perfil.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <!-- menu responsivo -->
+        <div class="posicao_geral_perfil_parceiro"></div>
+        <div class="phone">
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="./perfil_adm.html">
+                            <span class="icon">
+								<ion-icon name="person-outline"></ion-icon>
+							</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="./gerenciamento_parceiros_adm/gerenciamento_parceiros.html">
+                            <span class="icon">
+								<ion-icon name="grid-outline"></ion-icon>
+							</span>
+                        </a>
+                    </li>
+
+                    <li class="list">
+                        <a href="./editarperfil.html">
+                            <span class="icon">
+								<ion-icon name="settings-outline"></ion-icon>
+
+							</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../index.html">
+                            <span class="icon">
+								<ion-icon name="exit-outline"></ion-icon>
+							</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+
+
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+
+        <!-- fim menu responsivo -->
+        <section class="conteudo">
+            <div class="perfil_principal">
+                <img src="./gerenciamento_parceiros_adm/img/foto_perfil.svg" alt="">
+                <div class="perfil_info">
+                    <form action="">
+                        <div>
+                            <div>
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="Maria">
+                            </div>
+                            <div>
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" placeholder="Santos">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="eu@email.com">
+                            </div>
+                            <div>
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" placeholder="1234-5678">
+                            </div>
+                        </div>
+                        <div class="form_submit">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" value="senhasuperforte">
+                        </div>
+
+                        <div class="botoes_editar">
+                            <a class="submit_button_cancelar" href="./perfil_adm.html">Cancelar</a>
+
+                            <div>
+                                <a class="submit_button_salvar" href="#">Salvar</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <img src="../img/ilustracao_perfil.svg" alt="">
+        </section>
+    </main>
+</body>
+
+</html>

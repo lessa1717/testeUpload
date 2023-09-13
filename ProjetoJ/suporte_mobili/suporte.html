@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="shortcut icon" href="./img/icon_fav.svg">
+    <link rel="stylesheet" href="../header_footer.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="posicionamento_header posicionamento">
+            <div class="menu">
+                <img src="./img/logo.svg" alt="">
+                <nav>
+                    <input type="checkbox" id="input__menu-toggle" class="check">
+                    <label for="input__menu-toggle" class="label-for-menu">
+                        <div class="burger" onclick="mostrarMenu()" id="burguer" aria-expanded="false"
+                            aria-haspopup="true" aria-label="abrir menu">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                    </label>
+
+                    <div class="main-nav-list" id="recursos">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../quem_somos/quem_somos.html">Quem somos</a></li>
+                            <li><a href="../contato/index.html">Contato</a></li>
+                            <li><a href="#">Suporte</a></li>
+
+                            <div class="botoes_header_2">
+                                <a class="login" href="../login/index.html">Login</a>
+                                <a class="cadastro" href="../Cadastro/cadastro.html">Cadastro</a>
+                            </div>
+                        </ul>
+
+
+                    </div>
+                </nav>
+
+
+            </div>
+
+            <div class="botoes_header">
+                <a class="login" href="../login/index.html">Login</a>
+                <a class="cadastro" href="../Cadastro/cadastro.html">Cadastro</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="se1_suporte">
+            <div class="duvida posicionamento_se1 posicionamento">
+                <span>FAQs</span>
+                <h1>Procure sua dúvida</h1>
+                <span>Aqui a gente te ajuda!</span>
+
+                <input type="text" placeholder="Posso ajudar?">
+
+            </div>
+
+        </section>
+        <section class="se2_suporte posicionamento_se2 ">
+            <div class="ask">
+                <h2>Perguntas frequentes</h2>
+
+                <div class="contato_link">
+                    <div>
+                        <p>Não encontrou sua dúvida?</p>
+                    </div>
+                    <div><span>
+                            <a href="../contato/index.html">Entre em contato conosco</a></span></div>
+
+                </div>
+
+            </div>
+            <div class="cards_suporte posicionamento">
+                <div class="card1">
+                    <img src="./img/icon_suporte.svg" alt="">
+                    <h3>
+                        Como posso redefinir minha senha?
+                    </h3>
+                    <p>
+                        A opção de redefinir senha pode ser encontrada na página de login. Clique no link "Esqueceu a
+                        senha" ou "Redefinir senha" e siga as instruções para criar uma nova senha.
+                    </p>
+                </div>
+                <div class="card2">
+                    <img src="./img/icon_suporte.svg" alt="">
+                    <h3>
+                        Como posso proteger minha senha?
+                    </h3>
+                    <p>
+                        Para proteger sua senha, evite compartilhá-la com outras pessoas, não a salve em dispositivos
+                        públicos ou em nuvens não seguras e não use senhas simples e fáceis de adivinhar. Além disso,
+                        ative a autenticação de dois fatores sempre que possível.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="posicionamento_footer posicionamento">
+            <section class="container_footer1">
+                <img class="logo_footer" src="./img/logo_footer.svg" alt="">
+                <div class="redes_sociais">
+                    <nav>
+                        <a href="#"> <img src="./img/gg_facebook.svg" alt=""> </a>
+                        <a href="#"> <img src="./img/mdi_twitter.svg" alt=""> </a>
+                        <a href="#"> <img src="./img/formkit_linkedin.svg" alt=""> </a>
+                        <a href="#"> <img src="./img/mdi_instagram.svg" alt=""> </a>
+                    </nav>
+                </div>
+            </section>
+
+            <div class="linha"></div>
+            <section class="container_footer2">
+                <nav class="menu_footer">
+                    <span>Paginas</span>
+                    <ul>
+                        <li>Home</li>
+                        <li>Quem somos</li>
+                        <li>Contato</li>
+                        <li>Suporte</li>
+                        <li>Login</li>
+                        <li>Cadastro</li>
+                    </ul>
+                </nav>
+
+                <div class="news">
+                    <span>Junte-se à nossa newsletter</span>
+                    <div class="email_footer">
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                    <p>Enviaremos atualizações semanais para ajudar na gestão de suas ferramentas de maneira mais
+                        eficiente.</p>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
